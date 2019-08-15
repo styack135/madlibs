@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Madlibs in MGT656/MGT660</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script>
         let nouns = [];
@@ -35,7 +37,6 @@
             storyContent = storyContent.replace(/ADJECTIVE/g, () => chooseRandom(adjectives));
             storyContent = storyContent.replace(/ADVERB/g, () => chooseRandom(adverbs));
             storyContent = storyContent.replace(/VERB/g, () => chooseRandom(verbs));
-            storyContent = storyContent.replace(/SMILEY/g, () => chooseRandom(smileys));
             
 
             document.querySelector('#rendered-story').innerHTML = storyContent;
@@ -43,11 +44,10 @@
     </script>
 
     <!-- Feel free to add your own nouns, verbs, adverbs, and adjectives! -->
-    <script src="js/verbs/sbf.js"></script>
+    <script src="js/verbs/kyle.js"></script>
     <script src="js/adverbs/kyle.js"></script>
     <script src="js/nouns/kyle.js"></script>
     <script src="js/adjectives/kyle.js"></script>
-    <script src="js/smileys/kyle.js"></script>
 </head>
 
 <body>
@@ -60,19 +60,10 @@
 
     <!-- Feel free to add your own stories! -->
     <div class="story">
-        The ADJECTIVE NOUN VERBs over the ADJECTIVE NOUN. SMILEY
+        The ADJECTIVE NOUN VERBs over the ADJECTIVE NOUN.
     </div>
     <div class="story">
-        NOUN and NOUN VERB togther ADVERB and in peace, for such is their nature. SMILEY
-    </div>
-    <div class="story">
-        NOUN VERBs NOUN and won't leave NOUN in peace, for such is their nature.
-    </div>
-    <div class="story">
-        NOUN and NOUN avoid each other unless NOUN comes around.  And then they VERB and VERB until a way is found.
-    </div>
-    <div class="story">
-        NOUN likes to VERB ADVERB and NOUN likes to VERB vigorously.  Ooo La La.  ADJECTIVE #underwarefantasy.
+        NOUN and NOUN VERB togther ADVERB and in peace, for such is their nature.
     </div>
 
     <script>
